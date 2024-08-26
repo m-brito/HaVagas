@@ -20,4 +20,18 @@
     <string name="masculino">Masculino</string>
     <string name="feminino">Feminino</string>
     <string name="data_de_nascimento">Data de nascimento</string>
+    <string name="formacao">Formacao</string>
+    <string name="ano_de_formacao">Ano de formacao</string>
+    <string name="ano_de_conclusao">Ano de conclusao</string>
+    <string name="instituicao">Instituicao</string>
+    <string name="titulo_de_monografia">Titulo de monografia</string>
+    <string name="orientador">Orientador</string>
+    <string-array name="formacoes">
+        <item>Fundamental</item>
+        <item>Medio</item>
+        <item>Graduacao</item>
+        <item>Especializacao</item>
+        <item>Mestrado</item>
+        <item>Doutorado</item>
+    </string-array>
 </resources>

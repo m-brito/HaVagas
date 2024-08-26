@@ -229,6 +229,149 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/dataNascimentoTv" />
 
+        <TextView
+            android:id="@+id/formacaoTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/formacao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dataNascimentoEt" />
+
+        <Spinner
+            android:id="@+id/formacaoSpinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:entries="@array/formacoes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/formacaoTv" />
+
+        <LinearLayout
+            android:id="@+id/fundamentalMedioLt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/formacaoSpinner">
+
+            <TextView
+                android:id="@+id/anoFormaturaTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ano_de_formacao" />
+
+            <EditText
+                android:id="@+id/anoFormaturaEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/graduacaoEspecializacaoLt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fundamentalMedioLt">
+
+            <TextView
+                android:id="@+id/anoConclusaoTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ano_de_conclusao" />
+
+            <EditText
+                android:id="@+id/anoConclusaoEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/instituicaoTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/instituicao" />
+
+            <EditText
+                android:id="@+id/instituicaoEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mestradoDoutoradoLt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/graduacaoEspecializacaoLt">
+
+            <TextView
+                android:id="@+id/anoConclusaoMDTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ano_de_conclusao" />
+
+            <EditText
+                android:id="@+id/anoConclusaoMDEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/instituicaoMDTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/instituicao" />
+
+            <EditText
+                android:id="@+id/instituicaoMDEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/tituloMonografiaTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_de_monografia" />
+
+            <EditText
+                android:id="@+id/tituloMonografiaEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/orientadorTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/orientador" />
+
+            <EditText
+                android:id="@+id/orientadorEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
