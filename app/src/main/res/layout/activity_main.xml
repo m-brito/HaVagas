@@ -71,39 +71,50 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailTv" />
 
+    <CheckBox
+        android:id="@+id/atualizacoesCb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/desejo_receber_atualizacoes_por_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEt" />
+
     <TextView
-        android:id="@+id/atualizacoesTv"
+        android:id="@+id/tipoTelefoneTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="2dp"
         android:layout_marginEnd="10dp"
-        android:text="@string/receber_atualizacoes_por_email"
+        android:text="@string/tipo_de_telefone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailEt" />
+        app:layout_constraintTop_toBottomOf="@+id/atualizacoesCb" />
 
     <RadioGroup
-        android:id="@+id/atualizacoesRg"
+        android:id="@+id/tipoTelefoneRg"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/atualizacoesTv">
+        app:layout_constraintTop_toBottomOf="@+id/tipoTelefoneTv">
 
         <RadioButton
-            android:id="@+id/atualizacoesSimRb"
+            android:id="@+id/tipoTelefoneComercialRb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sim" />
+            android:text="@string/comercial" />
 
         <RadioButton
-            android:id="@+id/atualizacoesNaoRb"
+            android:id="@+id/tipoTelefoneResidencialRb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/n_o" />
+            android:text="@string/residencial" />
 
     </RadioGroup>
 
