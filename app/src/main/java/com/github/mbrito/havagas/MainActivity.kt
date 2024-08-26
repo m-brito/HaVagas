@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.github.mbrito.havagas.databinding.ActivityMainBinding
 
@@ -80,7 +81,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showFormData(formulario: Formulario) {
-        Toast.makeText(this, formulario.toString(), Toast.LENGTH_LONG).show()
+        AlertDialog.Builder(this)
+            .setTitle("Formulario")
+            .setMessage(formulario.toString())
+            .setPositiveButton("OK", null)
+            .show()
     }
 
     private fun clearForm() {
