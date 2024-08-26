@@ -203,6 +203,29 @@
             android:text="@string/feminino" />
     </RadioGroup>
 
+    <TextView
+        android:id="@+id/dataNascimentoTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/data_de_nascimento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sexoRg" />
+
+    <EditText
+        android:id="@+id/dataNascimentoEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataNascimentoTv" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

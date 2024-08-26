@@ -19,4 +19,5 @@
     <string name="sexo">Sexo</string>
     <string name="masculino">Masculino</string>
     <string name="feminino">Feminino</string>
+    <string name="data_de_nascimento">Data de nascimento</string>
 </resources>
