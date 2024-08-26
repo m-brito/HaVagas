@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">HaVagas</string>
     <string name="havagas">HaVagas</string>
+    <string name="nome">Nome</string>
+    <string name="informe_seu_nome">Informe seu nome</string>
 </resources>
