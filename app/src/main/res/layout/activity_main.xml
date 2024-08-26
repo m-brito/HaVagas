@@ -274,6 +274,7 @@
                 android:id="@+id/anoFormaturaEt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="@string/informe_o_ano_de_formacao"
                 android:inputType="number" />
         </LinearLayout>
 
@@ -298,6 +299,7 @@
                 android:id="@+id/anoConclusaoEt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="@string/informe_o_ano_de_conclusao"
                 android:inputType="number" />
 
             <TextView
@@ -310,6 +312,7 @@
                 android:id="@+id/instituicaoEt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="@string/informe_a_instituicao"
                 android:inputType="text" />
         </LinearLayout>
 
@@ -325,30 +328,6 @@
             app:layout_constraintTop_toBottomOf="@+id/graduacaoEspecializacaoLt">
 
             <TextView
-                android:id="@+id/anoConclusaoMDTv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/ano_de_conclusao" />
-
-            <EditText
-                android:id="@+id/anoConclusaoMDEt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number" />
-
-            <TextView
-                android:id="@+id/instituicaoMDTv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/instituicao" />
-
-            <EditText
-                android:id="@+id/instituicaoMDEt"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text" />
-
-            <TextView
                 android:id="@+id/tituloMonografiaTv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -358,6 +337,7 @@
                 android:id="@+id/tituloMonografiaEt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="@string/informe_o_titulo_de_monografia"
                 android:inputType="text" />
 
             <TextView
@@ -370,8 +350,27 @@
                 android:id="@+id/orientadorEt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="@string/informe_o_orientador"
                 android:inputType="text" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/vagasInteresseTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/vagas_de_interesse"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintTop_toBottomOf="@+id/mestradoDoutoradoLt" />
+
+        <EditText
+            android:id="@+id/vagasInteresseEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="@string/informe_as_vagas_de_interesse"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/vagasInteresseTv" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

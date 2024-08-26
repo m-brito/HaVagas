@@ -26,6 +26,13 @@
     <string name="instituicao">Instituicao</string>
     <string name="titulo_de_monografia">Titulo de monografia</string>
     <string name="orientador">Orientador</string>
+    <string name="informe_o_ano_de_formacao">Informe o ano de formacao</string>
+    <string name="informe_o_ano_de_conclusao">Informe o ano de conclusao</string>
+    <string name="informe_a_instituicao">Informe a Instituicao</string>
+    <string name="informe_as_vagas_de_interesse">Informe as vagas de interesse</string>
+    <string name="vagas_de_interesse">Vagas de interesse</string>
+    <string name="informe_o_titulo_de_monografia">Informe o titulo de monografia</string>
+    <string name="informe_o_orientador">Informe o orientador</string>
     <string-array name="formacoes">
         <item>Fundamental</item>
         <item>Medio</item>
