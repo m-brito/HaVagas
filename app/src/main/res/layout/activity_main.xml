@@ -245,7 +245,7 @@
             app:layout_constraintTop_toBottomOf="@+id/dataNascimentoEt" />
 
         <Spinner
-            android:id="@+id/formacaoSpinner"
+            android:id="@+id/formacaoSp"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
@@ -265,7 +265,7 @@
             android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/formacaoSpinner">
+            app:layout_constraintTop_toBottomOf="@+id/formacaoSp">
 
             <TextView
                 android:id="@+id/anoFormaturaTv"
