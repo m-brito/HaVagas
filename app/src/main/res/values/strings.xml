@@ -13,4 +13,10 @@
     <string name="comercial">Comercial</string>
     <string name="residencial">Residencial</string>
     <string name="informe_seu_telefone">Informe seu telefone</string>
+    <string name="incluir_telefone_celular">Incluir telefone celular?</string>
+    <string name="telefone_celular">Telefone Celular</string>
+    <string name="informe_seu_telefone_celular">Informe seu telefone celular</string>
+    <string name="sexo">Sexo</string>
+    <string name="masculino">Masculino</string>
+    <string name="feminino">Feminino</string>
 </resources>
