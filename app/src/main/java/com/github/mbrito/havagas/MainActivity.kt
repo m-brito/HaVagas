@@ -42,6 +42,10 @@ class MainActivity : AppCompatActivity() {
             val formulario = getFormData()
             showFormData(formulario)
         }
+
+        amb.btnLimpar.setOnClickListener {
+            clearForm()
+        }
     }
 
     private fun getFormData(): Formulario {
@@ -77,5 +81,27 @@ class MainActivity : AppCompatActivity() {
 
     private fun showFormData(formulario: Formulario) {
         Toast.makeText(this, formulario.toString(), Toast.LENGTH_LONG).show()
+    }
+
+    private fun clearForm() {
+        amb.nomeEt.text.clear()
+        amb.emailEt.text.clear()
+        amb.atualizacoesCb.isChecked = false
+        amb.tipoTelefoneRg.clearCheck()
+        amb.telefoneEt.text.clear()
+        amb.telefoneCelularCb.isChecked = false
+        amb.telefoneCelularLt.visibility = View.GONE
+        amb.sexoRg.clearCheck()
+        amb.dataNascimentoEt.text.clear()
+        amb.formacaoSp.setSelection(0)
+        amb.anoFormaturaEt.text.clear()
+        amb.anoConclusaoEt.text.clear()
+        amb.instituicaoEt.text.clear()
+        amb.tituloMonografiaEt.text.clear()
+        amb.orientadorEt.text.clear()
+        amb.vagasInteresseEt.text.clear()
+        amb.fundamentalMedioLt.visibility = View.GONE
+        amb.graduacaoEspecializacaoLt.visibility = View.GONE
+        amb.mestradoDoutoradoLt.visibility = View.GONE
     }
 }
