@@ -36,6 +36,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
+
         <EditText
             android:id="@+id/nomeEt"
             android:layout_width="0dp"
@@ -60,6 +61,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nomeEt" />
+
         <EditText
             android:id="@+id/emailEt"
             android:layout_width="0dp"
@@ -119,6 +121,7 @@
                 android:text="@string/residencial" />
 
         </RadioGroup>
+
         <EditText
             android:id="@+id/telefoneEt"
             android:layout_width="0dp"
@@ -358,19 +361,45 @@
             android:id="@+id/vagasInteresseTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/vagas_de_interesse"
             android:layout_marginHorizontal="10dp"
             android:layout_marginTop="2dp"
+            android:text="@string/vagas_de_interesse"
             app:layout_constraintTop_toBottomOf="@+id/mestradoDoutoradoLt" />
 
         <EditText
             android:id="@+id/vagasInteresseEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="@string/informe_as_vagas_de_interesse"
             android:layout_marginHorizontal="10dp"
+            android:hint="@string/informe_as_vagas_de_interesse"
+            android:inputType="text"
             app:layout_constraintTop_toBottomOf="@+id/vagasInteresseTv" />
+
+        <Button
+            android:id="@+id/btnSalvar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:text="@string/salvar"
+            app:layout_constraintBottom_toBottomOf="@+id/btnLimpar"
+            app:layout_constraintEnd_toStartOf="@+id/btnLimpar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnLimpar" />
+
+        <Button
+            android:id="@+id/btnLimpar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/limpar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnSalvar"
+            app:layout_constraintTop_toBottomOf="@+id/vagasInteresseEt" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

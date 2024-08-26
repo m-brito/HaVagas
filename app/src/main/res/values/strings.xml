@@ -33,6 +33,8 @@
     <string name="vagas_de_interesse">Vagas de interesse</string>
     <string name="informe_o_titulo_de_monografia">Informe o titulo de monografia</string>
     <string name="informe_o_orientador">Informe o orientador</string>
+    <string name="salvar">Salvar</string>
+    <string name="limpar">Limpar</string>
     <string-array name="formacoes">
         <item>Fundamental</item>
         <item>Medio</item>
